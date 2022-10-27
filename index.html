@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MYGROCERY-Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="MyGROCERY.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <script src = "cart.js" async></script>
+     <style> img { max-width: 100%; } </style>
+</head>   
+<style>
+    
+/* Image with link */
+.imglink {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  display: inline;
+  
+}
+
+/* To center image,set left&right margin to auto/make into block element */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;;
+  transform: translate(-50%, -50%);
+  
+}  
+
+.main {   
+  -ms-flex: 70%;
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: lemonchiffon;
+}
+
+/* image */
+.img {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  
+}
+   
+h6 {
+       text-shadow: 2px 2px black; 
+    }
+    
+.row 
+    {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side 
+{
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: blanchedalmond;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+ 
+}
+
+.font {
+  font-size: 300px;
+  align-content: center;
+  font-style: italic;
+  text-shadow: 2px 2px black;
+  background-clip: padding-box;
+  background-color: maroon;
+}
+
+h4 {
+     border: 10px dotted black;
+     border-color: rosybrown;
+     padding: 10px;
+     padding-left: 10px;
+     background-color: antiquewhite;
+     background-clip: padding-box;
+     
+    }
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: #2f2f2f;
+  background-color: #fff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.footer address {
+  font-style: normal;
+  color: #999;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+	flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: #999;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+@charset "UTF-8";
+
+.svg-inline--fa {
+  vertical-align: -0.200em;
+}
+
+.rounded-social-buttons {
+  text-align: center;
+}
+
+.rounded-social-buttons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 0.125rem solid transparent;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1.5625rem;
+  font-weight: normal;
+  line-height: 2em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rounded-social-buttons .fa-twitter, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {
+  font-size: 25px;
+}
+
+.rounded-social-buttons .social-button.facebook {
+  background: #3b5998;
+}
+
+.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.rounded-social-buttons .social-button.twitter {
+  background: #55acee;
+}
+
+.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.rounded-social-buttons .social-button.linkedin {
+  background: #007bb5;
+}
+
+.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus {
+  color: #007bb5;
+  background: #fefefe;
+  border-color: #007bb5;
+}
+
+.rounded-social-buttons .social-button.youtube {
+  background: #bb0000;
+}
+
+.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.rounded-social-buttons .social-button.instagram {
+  background: #125688;
+}
+
+.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
+  color: #125688;
+  background: #fefefe;
+  border-color: #125688;
+}
+
+</style>
+
+<body>
+    
+    <div class='menu-container'></div>
+
+    <div class="header">
+       <img src="product-images/headerMyGrocer.PNG">
+    </div>
+
+    <div class="navbar">
+        <a href="index.html" class="left">Home</a>
+        <a href="freshmarket.html" class="left">Fresh Market</a>  
+        <a href="bakery.html" class="left">Bakery</a>
+        <a href="chilled&frozen.html" class="left">Chilled & Frozen</a>
+        <a href="beverages.html" class="left">Beverages</a>    
+        <a href="foodcupboard.html" class="left">Food Cupboard</a>
+    
+         <div class="search-container">
+            
+            <form action="">
+                
+            <a href = "search.php">Search</a>
+            
+            <a href = "cart.php">My Cart</a>
+                
+            <a href = "login.html">Login</a>
+                
+            </form>
+        </div>
+        
+    </div>
+    
+   <br><br><br>
+    <div class="font">
+         <h2 align="center" style="color: white; font-size: 20%">WELCOME TO MYGROCERY</h2>
+    </div>
+    <br><h4 align="center">We deliver 7 days a week from 9am-9pm!<br>Shop with Us and your delivery will send it to your doorstep ASAP</h4>
+    <br><br>
+    <img src="product-images/promotionbanner.png" alt="promotion banner" style="align-items: flex-start;width:60%;height:50% " class="center">
+    <br><br><br><br><br>
+    <br>
+    <h2 align="left">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        FEATURE CATEGORY</h2> 
+  <div class="row">
+    <div class="main">
+        <div class="imglink"> 
+            <a href="freshmarket.html">
+                <img src="product-images/freshmarket.png" alt="bread link" style="width:250px;height:150px;">
+            <div class="centered" style="color: white"><h6>FRESH MARKET</h6></div></a>
+        </div>
+         <div class="imglink"> 
+            <a href="foodcupboard.html">
+                <img src="product-images/foodcupboard.png" alt="donut link" style="width:250px;height:150px;">
+            <div class="centered" style="color: white"><h6>FOOD CUPBOARD</h6></div></a>
+        </div>
+        <div class="imglink"> 
+            <a href="chilled&frozen.html">
+                <img src="product-images/frozenfood.jpg" alt="croissant link" style="width:250px;height:150px;">
+            <div class="centered" style="color: white"><h6>FROZEN FOODS</h6></div></a>
+        </div>
+        <div class="imglink"> 
+            <a href="bakery.html">
+                <img src="product-images/bakery.jpg" alt="egg tart link" style="width:250px;height:150px;">
+            <div class="centered" style="color: white"><h6>BAKERY</h6></div></a>
+        </div>
+         <div class="imglink"> 
+            <a href="beverages.html">
+                <img src="product-images/baverages.png" alt="muffin link" style="width:250px;height:150px;">
+            <div class="centered" style="color: white"><h6>BEVERAGES</h6></div></a>
+        </div> 
+    </div>
+   <div class="side"> 
+   <img src="product-images/deliverybanner.PNG" alt="promotion banner" style="200px" class="left">
+    </div>
+   </div> 
+    
+    <br><br><br><br><br><br>
+    
+     <footer class="footer">
+  <div class="footer__addr">
+    <h3 class="footer__logo">mygrocery</h3>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      123-456-789 | MyGrocery Online Store<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">ABOUT US</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="index.html">Alternative ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">WHAT'S IN STORE</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="freshmarket.html">Fresh Market</a>
+        </li>
+        
+        <li>
+          <a href="bakery.html">Bakery</a>
+        </li>
+        
+        <li>
+          <a href="chilled&frozen.html">Chilled & Frozen</a>
+        </li>
+        
+        <li>
+          <a href="beverages.html">Beverages</a>
+        </li>
+        
+        <li>
+          <a href="foodcupboard.html">Food Cupboard</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Thank You for <br> shopping with us!♥</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#"></a>
+        </li>
+        
+        <li>
+          <a href="#"></a>
+        </li>
+        
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2021 mygrocery.com | Designed by GNETT</p>
+    
+<!--    <div class="legal__links">
+      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span> 
+    </div> -->
+  </div>
+    
+    <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+</footer>
+
+    </body>
+</html>
