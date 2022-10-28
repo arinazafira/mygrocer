@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MYGROCER-Chilled & Frozen</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="MyGROCERY.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+<body>
+    
+    <div class='menu-container'></div>
+
+    <div class="header">
+       <img src="product-images/headerMyGrocer.PNG">
+    </div>
+
+    <div class="navbar">
+        <a href="index.html" class="left">Home</a>
+        <a href="freshmarket.html" class="left">Fresh Market</a>    
+        <a href="bakery.html" class="left">Bakery</a>
+        <a href="chilled&frozen.html" class="left">Chilled & Frozen</a>
+        <a href="beverages.html" class="left">Beverages</a>    
+        <a href="foodcupboard.html" class="left">Food Cupboard</a>
+    
+         <div class="search-container">
+            
+            <a href = "search.php">Search</a>
+            
+            <a href = "cart.php">My Cart</a>
+             
+            <a href = "login.html">Login</a>
+                
+            </form>
+        </div>
+        
+    </div>
+
+   <div class="row">
+    <div class="side">
+          
+        <div id="menuList">
+            <a href = "freshmarket.html"><button class="btn">Fresh Market </button></a><br>
+            <a href = "bakery.html"><button class="btn">Bakery</button></a><br>
+            <a href = "chilled&frozen.html"><button class="btn active">Chilled & Frozen</button></a><br>
+            <a href = "beverages.html"><button class="btn">Beverages</button></a><br>
+            <a href = "foodcupboard.html"><button class="btn">Food Cupboard</button></a>
+        </div>
+    
+    <script>
+            var header = document.getElementById("menuList");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                    });
+            }
+            
+        </script>
+    
+  </div>
+  <div class="main">
+      <img src="https://media.nedigital.sg/fairprice/images/a1cd3e65-3c7e-4381-8f73-4b1436528b19/MP-Cat-FreshChilledFrozen-LandingBanner-Jun2021.jpg?q=70" width="1180" height="280">
+    <p></p>
+      <p></p>
+      
+    <div class="opening">
+      <h2>LET'S GET CHILLED & FROZEN !</h2>
+      <p></p></div>  
+      
+      <div class="wrapper">
+          <h1>MILKS</h1>
+          <span><i class="shopping-cart"></i></span>
+          <div class="clear"></div>
+          
+          <div class="items">
+              <div class="item">
+                  <img src="https://www.dutchlady.com.my/wp-content/uploads/2020/09/chocolate-flavoured-milk-uht-1l.jpg" height= "180px" alt="">
+                  <h2>Dutch Lady Chocolate Milk UHT Milk (1L)</h2>
+                  <p>PRICE: RM5.50 <strike> RM6.10</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+               <div class="item">
+                  <img src="https://www.dutchlady.com.my/wp-content/themes/dutchlady/assets/goodness-of-milk/images/s2-ducthlady-full-cream-milk.png" height= "180px" alt="">
+                  <h2>Dutch Lady Full Cream Milk UHT Milk (1L)</h2>
+                  <p>PRICE: RM5.00 <strike> RM6.10</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+              <div class="item">
+                  <img src="https://www.dutchlady.com.my/wp-content/uploads/2020/09/kurma-flavoured-milk-uht-200ml.jpg" height= "180px" alt="">
+                  <h2>Dutch Lady Kurma Milk UHT Milk (1L)</h2>
+                  <p>PRICE: RM6.00 <strike> RM6.70</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+              <div class="item">
+                  <img src="https://www.dutchlady.com.my/wp-content/uploads/2020/09/strawberry-flavoured-milk-uht-1l.jpg" height= "180px" alt="">
+                  <h2>Dutch Lady Strawberry Milk UHT Milk (1L)</h2>
+                  <p>PRICE: RM5.50 <strike> RM6.10</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+          </div>
+              
+          
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="wrapper">
+          <h1>CHEESE & FRUIT YOGURT</h1>
+          <span><i class="shopping-cart"></i></span>
+          <div class="clear"></div>
+          
+          <div class="items">
+              <div class="item">
+                  <img src="product-images/mozarella.jpg" height= "180px" alt="">
+                  <h2>Mozarella Cheese 200g/pack</h2>
+                  <p>PRICE: RM15.90 <strike> RM16.50</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+               <div class="item">
+                  <img src="https://cdn2.webdamdb.com/md_synpszsuLV51.png?1598496636" height= "165px" alt=""><br><br>
+                  <h2>Chesdale Cheese Slice</h2>
+                  <p>PRICE: RM9.50 <strike>RM10.10</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+               <div class="item">
+                  <img src="https://mygroser.s3.ap-southeast-1.amazonaws.com/productImages/1000X1000/1585982630039-MARIGOLD%200%25%20Fat%20Yogurt%20Mixed%20Berry_1kg.jpeg" height= "180px" alt="">
+                  <h2>Marigold Mixed Berries Yogurt 1kg</h2>
+                  <p>PRICE: RM10.30</p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+              <div class="item">
+                  <img src="https://cdn.shopify.com/s/files/1/0095/1651/5390/products/000471-1-1_800x.jpg?v=1615976197" height= "180px" alt="">
+                  <h2>Dutch Lady Blueberry Yogurt</h2>
+                  <p>PRICE: RM4.20 <strike> RM4.60</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              </div>       
+
+          </div>
+          
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          <div class="wrapper">
+          <h1>FOODS</h1>
+          <span><i class="shopping-cart"></i></span>
+          <div class="clear"></div>
+          
+          <div class="items">
+              <div class="item">
+                  <img src="https://www.kedaiayamas.my/wp-content/uploads/2019/06/1464533625.png" height= "180px" alt="">
+                  <h2>Chicken Cocktail Sausage 800g</h2>
+                  <p>PRICE: RM12.75</p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+            
+               <div class="item">
+                  <img src="https://secure.ap-tescoassets.com/assets/MY/514/9556276020514/ShotType1_540x540.jpg" height= "170px" alt="">
+                  <h3>AYAMAS Hot n Spicy Chicken (850g)</h3>
+                  <p>PRICE: RM12.30 <strike>RM13.70</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+               <div class="item">
+                  <img src="https://dhimart.mv/pub/media/catalog/product/cache/72053ff7aae91ace1421f31b9ef78d94/k/a/kawan_frozen_sweet_corn_500g.png" height= "170px" alt="">
+                  <h3>KAWAN Frozen Sweet Corn (500g)</h3>
+                  <p>PRICE: RM5.00 <strike>RM5.75</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+              <div class="item">
+                  <img src="https://www.desasegar.com.my/storage/media/filemanager/frozen%20vegetable/kawan%20mixed%20vege.png" height= "180px" alt="">
+                  <h2>Frozen Mixed Vegetables 500g</h2>
+                  <p>PRICE: RM4.20</p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              </div>       
+
+              
+          </div>
+      </div>
+      
+      <br><br><br><br><br><br><br><br><br>
+      
+ 
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      
+  </div>
+</div>
+    
+
+   <footer class="footer">
+  <div class="footer__addr">
+    <h3 class="footer__logo">mygrocery</h3>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      123-456-789 | MyGrocery Online Store<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">ABOUT US</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="index.html">Alternative ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">WHAT'S IN STORE</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="freshmarket.html">Fresh Market</a>
+        </li>
+        
+        <li>
+          <a href="bakery.html">Bakery</a>
+        </li>
+        
+        <li>
+          <a href="chilled&frozen.html">Chilled & Frozen</a>
+        </li>
+        
+        <li>
+          <a href="beverages.html">Beverages</a>
+        </li>
+        
+        <li>
+          <a href="foodcupboard.html">Food Cupboard</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Thank You for <br> shopping with us!♥</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#"></a>
+        </li>
+        
+        <li>
+          <a href="#"></a>
+        </li>
+        
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2021 mygrocery.com | Designed by GNETT</p>
+    
+
+  </div>
+    
+    <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+</footer>
+</body>
+</html>

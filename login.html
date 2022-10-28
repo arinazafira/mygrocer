@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+    <title>Login Form</title>  
+      
+    <link rel = "stylesheet" type = "text/css" href = "">   
+</head>
+    
+<style>
+   
+ body  
+{  
+    margin: 0;  
+    padding: 0;  
+    background-color:lemonchiffon;  
+    font-family: 'Arial';  
+}  
+    
+.header
+    {
+        padding:0px;
+        text-align: center;
+        background-color: maroon;
+    }
+    
+  .login{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: white;  
+        border-radius: 15px ;
+}    
+      
+ .footer-container
+{
+    padding: 1px;
+    text-align: center;
+    background-color: maroon; 
+}
+
+.footer-container h1
+    {
+        font-family: monospace;
+        color: white;
+        font-size: 30px;
+    }   
+    
+h1
+{  
+    text-align: center;  
+    color: black;  
+    padding: 20px;  
+    font-family:monospace;
+    font-size: 40px;
+} 
+    
+label{  
+    color: black;  
+    font-size: 17px;  
+}  
+</style>
+
+<body> 
+    
+    <div class="header">
+       <img src="product-images/headerMyGrocer.PNG">
+    </div>
+    
+    
+    <div id = "frm">  
+        <h1>LOGIN</h1> 
+        <div class="login">
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+            <p>  
+                <label> UserName: </label>  
+                <input type = "text" id ="user" name  = "user" />  
+            </p>  
+            <p>  
+                <label>  Password: </label>  
+                <input type = "password" id ="pass" name  = "pass" />  
+            </p>  
+            <p>     
+                <input type =  "submit" id = "btn" value = "Log In" /> 
+            </p>
+            <p>
+                <a href="#">Forgot Password</a>
+                <br><br>
+                <a href = "index.html">Back To Home</a>
+            </p>
+        </form>  
+    </div>  
+    </div>
+    
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>
+    
+    <br><br><br>
+    <div class='footer-container'>
+            <h1>You're always welcome to shop with MYGROCERY!</h1>
+        </div>
+    
+</body>     
+</html>  

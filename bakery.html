@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MYGROCER-Bakery</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="MyGROCERY.css"/>
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class='menu-container'></div>
+
+    <div class="header">
+       <img src="product-images/headerMyGrocer.PNG">
+    </div>
+
+      <div class="navbar">
+        <a href="index.html" class="left">Home</a>
+        <a href="freshmarket.html" class="left">Fresh Market</a>    
+        <a href="bakery.html" class="left">Bakery</a>
+        <a href="chilled&frozen.html" class="left">Chilled & Frozen</a>
+        <a href="beverages.html" class="left">Beverages</a>    
+        <a href="foodcupboard.html" class="left">Food Cupboard</a>
+    
+         <div class="search-container">
+            
+            
+            <a href = "search.php">Search</a>
+            
+            <a href = "cart.php">My Cart</a>
+             
+            <a href = "login.html">Login</a>
+                
+            </form>
+        </div>
+        
+    </div>
+
+
+   <div class="row">
+    <div class="side">
+          
+        <div id="menuList">
+            <a href="freshmarket.html">
+            <button class="btn">Fresh Market </button></a><br>
+            <a href = "bakery.html"><button class="btn active">Bakery</button></a><br>
+            <a href="chilled&frozen.html">
+            <button class="btn">Chilled & Frozen</button></a><br>
+            <a href="beverages.html">
+            <button class="btn">Beverages</button></a><br>
+            <a href="foodcupboard.html">
+            <button class="btn">Food Cupboard</button></a><br>
+        </div>
+    
+    <script>
+            var header = document.getElementById("menuList");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                    });
+            }
+            
+        </script>
+    
+  </div>
+  <div class="main">
+      <br>
+      <img src="product-images/bakerybanner.png" align = "right" width="1180" height="280">
+    <p></p>
+      
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="opening"> <br>
+      <h2>HOT FROM THE OVEN!!</h2>
+      <p></p></div>  
+      
+      <div class="wrapper">
+          <h1>Pastry</h1>
+          <span><i class="shopping-cart"></i></span>
+          <div class="clear"></div>
+          
+          <div class="items">
+              <div class="item">
+                  <img src="product-images/breads.png" height= "145px" alt=""><br><br>
+                  <h2>Loaf Bread</h2>
+                  <p>PRICE: RM4.00 <strike> RM5.00</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+               <div class="item">
+                  <img src="product-images/donut.png" height= "180px" alt="">
+                  <h2>Donuts (6 pcs)</h2>
+                  <p>PRICE: RM8.00 <strike> RM10.00</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+               <div class="item">
+                  <img src="product-images/croissant.png" height= "180px" alt="">
+                  <h2>Croissant</h2>
+                  <p>PRICE: RM2.00</p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+               <div class="item">
+                  <img src="product-images/egg%20tart.png" height= "159px" alt=""><br>
+                  <h2>Egg Tart (4pcs)</h2>
+                  <p>PRICE: RM4.00</p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+          </div>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          
+          <h1>Cakes</h1>
+          <span><i class="shopping-cart"></i></span>
+          <div class="clear"></div>
+          
+          <div class="items">
+              <div class="item">
+                  <img src="product-images/muffin.png" height= "180px" alt=""><br><br>
+                  <h2>Muffin (2pcs)</h2>
+                  <p>PRICE: RM4.00<strike> RM6.00</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+               <div class="item">
+                  <img src="product-images/choccake.png" height= "177px" alt=""><br>
+                  <h2>Indulgence Chocolate Cake</h2>
+                  <p>PRICE: RM9.00 </p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+               <div class="item">
+                  <img src="product-images/cheesecake.png" height= "180px" alt=""><br><br>
+                  <h2>Classic Cheese Cake</h2>
+                  <p>PRICE: RM7.50</p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+              <div class="item">
+                  <img src="product-images/rvcake.png" height= "180px" alt=""><br><br>
+                  <h2>Red Velvet Cake</h2>
+                  <p>PRICE: RM7.50 <strike>RM9.00</strike></p>
+                  <button class="add-to-cart" type="button"> CLICK MY CART TO PLACE ORDER</button>
+              </div>
+              
+          </div>
+      </div>
+      
+      <br><br><br><br><br><br><br><br><br>
+      
+    <br>
+      <br><br><br><br><br><br><br><br><br><br><br><br>
+      
+  </div>
+</div>
+    
+
+   <footer class="footer">
+  <div class="footer__addr">
+    <h3 class="footer__logo">mygrocery</h3>
+        
+    <h2>Contact</h2>
+    
+    <address>
+      123-456-789 | MyGrocery Online Store<br>
+          
+      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">ABOUT US</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="index.html">Alternative ads</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item nav__item--extra">
+      <h2 class="nav__title">WHAT'S IN STORE</h2>
+      
+      <ul class="nav__ul nav__ul--extra">
+        <li>
+          <a href="freshmarket.html">Fresh Market</a>
+        </li>
+        
+        <li>
+          <a href="bakery.html">Bakery</a>
+        </li>
+        
+        <li>
+          <a href="chilled&frozen.html">Chilled & Frozen</a>
+        </li>
+        
+        <li>
+          <a href="beverages.html">Beverages</a>
+        </li>
+        
+        <li>
+          <a href="foodcupboard.html">Food Cupboard</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Thank You for <br> shopping with us!♥</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="#"></a>
+        </li>
+        
+        <li>
+          <a href="#"></a>
+        </li>
+        
+        <li>
+          <a href="#"></a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  <div class="legal">
+    <p>&copy; 2021 mygrocery.com | Designed by GNETT</p>
+    
+  </div>
+    
+    <div class="rounded-social-buttons">
+                    <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+</footer>
+
+</body>
+</html>
